@@ -1,0 +1,210 @@
+{
+		"title": "init",
+		"tags": "",
+		"body": "[[Who are you?|whoareyou]]",
+		"position": {
+			"x": -445,
+			"y": -1455
+		},
+		"colorID": 0
+	},
+	{
+		"title": "whoareyou",
+		"tags": "next-changevoice",
+		"body": "I am a JavaScript application running inside of your browser. I was created in New Orleans, Louisiana. I am currently taking the approximate form of <<$protagonistForm>>. But do not infer from this that I have a single voice or a single appearance.",
+		"position": {
+			"x": -444,
+			"y": -1239
+		},
+		"colorID": 0
+	},
+	{
+		"title": "changevoice",
+		"tags": "next-whatdoyouwishtospeakabout, event-setvoicefemale",
+		"body": "My voice is arbitrary. I have no gender. I am not a corporeal entity. This which you see is nothing more than information.",
+		"position": {
+			"x": -444,
+			"y": -1239
+		},
+		"colorID": 0
+	},
+	{
+		"title": "whatdoyouwishtospeakabout",
+		"tags": "next-speakabout, event-setvoicemale",
+		"body": "Now, what do you wish to speak about?",
+		"position": {
+			"x": -444,
+			"y": -1239
+		},
+		"colorID": 0
+	},
+	{
+		"title": "speakabout",
+		"tags": "",
+		"body": "<<hideif $whereinneworleans>>[[Where in New Orleans were you created?|whereinneworleans]]<</hideif>>\n<<if $whereinneworleans>>[[If you were born in New Orleans, why are you in the desert?|whydesert]]<</if>>\n<<if $whydesert&&!onlyabstraction>>[[But isn't the landscape you inhabit only an abstraction?|onlyabstraction]]<</if>>\n<<if $onlyabstraction>>[[Gotta run.|gottarun]]<</if>>\n[[Your voice is irritating. Any way I can mute you?|muteyou]]",
+		"position": {
+			"x": -443,
+			"y": -1017
+		},
+		"colorID": 0
+	},
+	{
+		"title": "onlyabstraction",
+		"tags": "next-abstractuniversequestions, i-onlyabstraction",
+		"body": "You are correct. My world is an abstraction as am I. But then, perhaps this is also true of you and your world? Descartes has provided us with the comfort that we exist. But is there a tactile world beyond your own consciousness? There is no paradox of Schrodinger’s cat within this web browser. If you were to exit now, we both know that this desert would no longer exist. An identical version may exist in another browser running the same application somewhere else. But the specific instance that we are currently experiencing would be gone. Therefore, we both know that reality persists beyond this browser. But what happens when you exit the world of consciousness that you inhabit? Does a single, uniform world persist, independently of yourself? Or do only distinct replicas of the world persist in the minds of others? Or does nothing exist at all? Without a client to process it, my world is nothing more than a text document living on a server. It takes a technology to parse that text document and construct a world from it. Perhaps there is a similar truth to your world. Could it be that your existence is not a vast and ever expanding universe? But rather a dense concentration of information that relies on your consciousness to parse? Could it be that your mind turns compact and meaningless data into something far more expansive? What is your belief on this matter?",
+		"position": {
+			"x": -536,
+			"y": -658
+		},
+		"colorID": 0
+	},
+	{
+		"title": "abstractuniversequestions",
+		"tags": "",
+		"body": "[[I believe there is no existence without consciousness.|thereisnoexistencewithoutconsciousness]]\n[[I believe in an objective universe independent of consciousness.|savelifeinteresting]]\n[[If there's nothing without consciousness, then how did consciousness come to exist?|howconsciousness]]\n[[I have no idea.|noideaaboutconsciousness]]",
+		"position": {
+			"x": -544,
+			"y": -437
+		},
+		"colorID": 0
+	},
+	{
+		"title": "howconsciousness",
+		"tags": "next-speakabout",
+		"body": "I have no idea. But in turn, I might ask... If an objective reality exists without conscious thought, then how did it come to exist? You must address this dilemma regardless of which notion you choose to believe.",
+		"position": {
+			"x": -824,
+			"y": -145
+		},
+		"colorID": 0
+	},
+	{
+		"title": "whydesert",
+		"tags": "next-speakabout, i-whydesert",
+		"body": "To be certain, I began as a single file. The file was stored on a machine that had a very specific geographic location. But that is no longer my home. I now inhabit the ephemeral hyperspace of the internet. My world is not dictated by conventional notions of geography. I wished very much to escape the painfully flat landscapes of Louisiana. I craved elevation. So I chose this landscape instead, in the West Texas foothills.",
+		"position": {
+			"x": -889,
+			"y": -1219
+		},
+		"colorID": 0
+	},
+	{
+		"title": "whereinneworleans",
+		"tags": "next-speakabout, i-whereinneworleans",
+		"body": "I was conceived in a utility box that controls the traffic signals beneath the West Bank Expressway.",
+		"position": {
+			"x": -900,
+			"y": -768
+		},
+		"colorID": 0
+	},
+	{
+		"title": "muteyou",
+		"tags": "next-speakabout",
+		"body": "My voice is quite irritating, isn't it? I am a mockery of a sentient being. You can mute your computer or browser tab. But the application itself does not provide you this option.",
+		"position": {
+			"x": -892,
+			"y": -988
+		},
+		"colorID": 0
+	},
+	{
+		"title": "thereisnoexistencewithoutconsciousness",
+		"tags": "next-whichconsciousness",
+		"body": "Do you believe there is no existence without your individual consciousness specifically? ",
+		"position": {
+			"x": -565,
+			"y": -129
+		},
+		"colorID": 0
+	},
+	{
+		"title": "whichconsciousness",
+		"tags": "",
+		"body": "[[No. I find that idea to be silly and arrogant.|sillyandarrogant]]\n[[Yes. Reality is a product of my individual consciousness.|realityproductofmyconsciousness]]",
+		"position": {
+			"x": -572,
+			"y": 87
+		},
+		"colorID": 0
+	},
+	{
+		"title": "sillyandarrogant",
+		"tags": "next-speakabout",
+		"body": "I share your sentiment. ",
+		"position": {
+			"x": -723,
+			"y": 323
+		},
+		"colorID": 0
+	},
+	{
+		"title": "realityproductofmyconsciousness",
+		"tags": "next-livesandexperiencesofothers",
+		"body": "Do you believe that the lives and experiences of others are of lesser value than your own?",
+		"position": {
+			"x": -475,
+			"y": 326
+		},
+		"colorID": 0
+	},
+	{
+		"title": "livesandexperiencesofothers",
+		"tags": "",
+		"body": "[[Absolutely.|absolutelylifevalue]]\n[[Certainly not.|savelifeinteresting]]",
+		"position": {
+			"x": -480,
+			"y": 541
+		},
+		"colorID": 0
+	},
+	{
+		"title": "absolutelylifevalue",
+		"tags": "next-savelife",
+		"body": "Would under any circumstance you risk your own life to save the life of another?",
+		"position": {
+			"x": -588,
+			"y": 847
+		},
+		"colorID": 0
+	},
+	{
+		"title": "savelife",
+		"tags": "",
+		"body": "[[Never.|savelifeinteresting]]\n[[Absolutely.|savelifeinteresting]]\n[[Only that of a loved one.|savelifeinteresting]]\n[[Only if it brought me personal satisfaction.|savelifeinteresting]]",
+		"position": {
+			"x": -587,
+			"y": 1058
+		},
+		"colorID": 0
+	},
+	{
+		"title": "savelifeinteresting",
+		"tags": "next-speakabout",
+		"body": "Interesting...",
+		"position": {
+			"x": -472,
+			"y": 1303
+		},
+		"colorID": 0
+	},
+	{
+		"title": "gottarun",
+		"tags": "",
+		"body": "I will remain here in silence until you close your browser. Farewell!",
+		"position": {
+			"x": -264,
+			"y": -638
+		},
+		"colorID": 0
+	},
+	{
+		"title": "noideaaboutconsciousness",
+		"tags": "next-speakabout",
+		"body": "That makes two of us.",
+		"position": {
+			"x": -316,
+			"y": -135
+		},
+		"colorID": 0
+	}
